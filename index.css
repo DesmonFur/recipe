@@ -1,1 +1,38 @@
 /* Add your CSS here. Utilize Tailwind classes or write custom styles to bring your unique design to life. */
+
+body {
+  display: flex;
+}
+
+.left-col {
+  height: 100%;
+  width: clamp(20%, 55vw, 100%);
+  /* background-image: url("https://images.unsplash.com/photo-1588413333567-fbbeba4d6405?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+img {
+  margin-top: 80px;
+}
+
+@media (min-width: 640px) {
+  .left-col {
+    height: 100%;
+    width: 50%;
+    background-image: url("https://images.unsplash.com/photo-1588413333567-fbbeba4d6405?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .left-col img {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) {
+  .right-col {
+    height: 100%;
+    width: auto;
+  }
+}

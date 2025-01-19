@@ -10,54 +10,41 @@
 
     <!-- TailwindCSS for styling. Feel free to integrate other libraries as needed -->
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <script
+      src="https://kit.fontawesome.com/2660f0030c.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Add your external script links here, if any -->
   </head>
 
-  <body
-    class="bg-gray-900 flex flex-col items-center justify-center min-h-screen"
-  >
+  <body class="bg-gray-100 min-h-screen">
     <div
-      class="bg-white text-gray-800 p-8 space-y-4 shadow rounded-xl max-w-md md:max-w-lg"
+      class="flex flex-col items-center sm:items-start w-screen h-screen sm:flex-row"
     >
-      <!-- Logo and Title -->
-      <img
-        src="https://mqzzwgavxmdmqvivwgez.supabase.co/storage/v1/object/public/previews/logo-challenge-template.svg"
-        alt="BigDevSoon Logo"
-        class="w-150 mx-auto"
-      />
-      <!-- Introduction and Instructions -->
-      <p class="text">
-        Utilize the tabs in <strong>BigDevSoon's challenge page</strong> to
-        access everything you need. The <strong>Instructions</strong> tab
-        contains specific details for implementing this task.
-      </p>
-
-      <!-- Encouragement for Creativity and Interaction -->
-      <ul class="list-disc list-inside space-y-2">
-        <li>
-          Be <strong>creative!</strong> Don't hesitate to bring your unique
-          ideas to life.
-        </li>
-        <li>
-          Interact with <strong>ChatGPT</strong> for coding assistance and
-          hints.
-        </li>
-        <li>
-          Connect with other developers who are tackling the same challenge in
-          the <strong>People</strong> tab.
-        </li>
-        <li>
-          Need a nudge in the right direction? Check out the
-          <strong>Help</strong> tab.
-        </li>
-      </ul>
-
-      <p class="text-sm border-t pt-6">
-        <strong>Tip</strong>: This example uses TailwindCSS for styling. Feel
-        free to integrate any other libraries using their respective CDNs to
-        enhance your project.
-      </p>
+      <div class="left-col">
+        <img
+          class="sm:hidden"
+          src="https://images.unsplash.com/photo-1588413333567-fbbeba4d6405?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+      </div>
+      <div class="right-col">
+        <heading>
+          <div class="rating hidden sm:inline-block">
+            <div class="rating-icons">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <span>(189)</span>
+          </div>
+          <h1 class="hidden sm:inline-block">
+            Sweet iced Coffee with Coconut Milk
+          </h1>
+        </heading>
+      </div>
     </div>
   </body>
 </html>
