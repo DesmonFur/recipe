@@ -46,13 +46,16 @@ img {
     position: relative;
     top: 52px;
     right: 222px;
-    height: 184px;
+    height: 200px;
     width: clamp(500px, 55vw, 855px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 4px;
-    padding-left: 2%;
+    padding-top: 25px;
+    padding-left: 40px;
+    padding-bottom: 15px;
+    /* padding: 84px; */
   }
 
   h1 {
@@ -64,7 +67,8 @@ img {
     width: 400px;
     /* background-color: rgb(175, 169, 169); */
     display: flex;
-    justify-content: space-around;
+    gap: 36px;
+    /* justify-content: space-between; */
   }
 
   .recipe-stats-container li {
@@ -72,12 +76,13 @@ img {
     /* background-color: rgb(175, 169, 169); */
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 12px;
   }
 
   .recipe-flex-container {
     display: flex;
     flex-direction: column;
+    /* align-items: center; */
   }
   .stat-title {
     font-size: 12px;
@@ -86,6 +91,7 @@ img {
   .stat-info {
     font-size: 14px;
     color: #ffa41b;
+    align-self: center;
   }
 }
 
